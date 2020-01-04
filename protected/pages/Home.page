@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Sistema Extractor de Emails para ChamitoX</title>
+</head>
+<body>
+Inscripcion de Direcciones de Email en la base de Datos. (más de 1 email)
+    <com:TForm>
+        <com:TTextBox ID="txt_emails" TextMode="MultiLine" Rows="20" Columns="80" Text="pedroarrioja@gmail.com">
+    </com:TTextBox>
+    <com:TButton ID="btn_incluir"
+        Text="Incluir"
+        OnClick="click"/>
+    </com:TForm>
+</body>
+</html>

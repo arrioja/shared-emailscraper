@@ -1,0 +1,46 @@
+#menu ul { list-style-type: none; }
+
+#menu li { display: inline; }
+
+
+#menu
+{
+	background-color: #E7371A;
+	color: #272900;
+	padding: 2px 0;
+	margin-bottom: 22px;
+}
+
+#menu ul
+{
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style-type: none;
+	border-left: 1px solid #C4C769;
+}
+
+
+
+#menu li
+{
+	display: inline;
+	padding: 0 10px;
+	border-right: 1px solid #C4C769;
+}
+
+
+
+#menu li a
+{
+	text-decoration: none;
+	color: #272900;
+}
+
+
+
+#menu li a:hover
+{
+	text-decoration: none;
+	color: #fff;
+	background-color: #D5C8B8;
+}

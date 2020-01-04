@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>Welcome to PRADO</title>
+</head>
+<body>
+<script type="text/javascript" src="protected/comunes/llamada_mensaje.js"></script>
+<com:TForm ID="form1">
+    <com:MensajeDiv ID="LTB"/>
+			<li>
+				<com:TActiveButton Text="Mensaje" OnCallback="mensajeclick">
+				</com:TActiveButton>
+
+	<div id="menu">
+		<ul>
+			<li>
+				<com:TActiveLinkButton Text="Home" OnCallback="onShowHomePanel">
+					<prop:ClientSide
+						OnLoading="$('loading').show()"
+						OnComplete="$('loading').hide()"/>
+				</com:TActiveLinkButton>
+			</li>
+			<li>
+				<com:TActiveLinkButton Text="About" OnCallback="onShowAboutPanel">
+					<prop:ClientSide
+						OnLoading="$('loading').show()"
+						OnComplete="$('loading').hide()"/>
+				</com:TActiveLinkButton>
+			</li>
+			<li>
+				<com:TActiveLinkButton Text="Downloads" OnCallback="onShowDownloadsPanel">
+					<prop:ClientSide
+						OnLoading="$('loading').show()"
+						OnComplete="$('loading').hide()"/>
+				</com:TActiveLinkButton>
+			</li>
+			<li>
+				<com:TActiveLinkButton Text="Contact" OnCallback="onShowContactPanel">
+					<prop:ClientSide
+						OnLoading="$('loading').show()"
+						OnComplete="$('loading').hide()"/>
+				</com:TActiveLinkButton>
+			</li>
+		</ul>
+	</div>
+
+	<com:TActivePanel ID="panelHome">
+		<h1>Home panel 123456789012345678901234567890</h1>
+	</com:TActivePanel>
+
+	<com:TActivePanel ID="panelAbout" Attributes.style="display: none;">
+		<h1>About panel 123456789012345678901234567890</h1>
+	</com:TActivePanel>
+
+	<com:TActivePanel ID="panelDownloads" Attributes.style="display: none;">
+		<h1>Downloads panel 123456789012345678901234567890</h1>
+	</com:TActivePanel>
+
+	<com:TActivePanel ID="panelContact" Attributes.style="display: none;">
+		<h1>Contact panel 123456789012345678901234567890</h1>
+	</com:TActivePanel>
+
+</com:TForm>
+
+</body>
+</html>
